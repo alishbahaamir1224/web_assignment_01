@@ -2,170 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact the NovaSpace team with your question, suggestion, or project idea." />
     <title>NovaSpace — Contact</title>
-    <link rel="icon" href="../../assets/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <script src="../../assets/js/site.js" defer></script>
   </head>
   <body class="bg-slate-50 text-slate-900">
     <header class="sticky top-0 z-50 border-b border-slate-200/70 glass">
-      <nav
-        class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4"
-      >
-        <a
-          href="../../index.html"
-          class="flex items-center gap-2 font-black text-xl"
-          ><span
-            class="grid h-9 w-9 place-items-center rounded-xl bg-indigo-600 text-white"
-            >N</span
-          >NovaSpace</a
-        >
-        <div class="hidden items-center gap-6 md:flex">
-          <a href="../../index.html">Home</a><a href="about.html">About</a
-          ><a class="font-medium text-indigo-600" href="contact.html">Contact</a
-          ><a href="signin.html">Sign In</a
-          ><a
-            class="rounded-xl bg-indigo-600 px-4 py-2 font-semibold text-white"
-            href="signup.html"
-            >Sign Up</a
-          >
-        </div>
-        <button id="menuBtn" class="rounded-lg border px-3 py-2 md:hidden">
-          ☰
-        </button>
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4" aria-label="Main navigation">
+        <a href="../../index.html" class="flex items-center gap-2 text-xl font-black"><span class="grid h-9 w-9 place-items-center rounded-xl bg-indigo-600 text-white" aria-hidden="true">N</span>NovaSpace</a>
+        <div class="hidden items-center gap-6 md:flex"><a class="hover:text-indigo-600" href="../../index.html">Home</a><a class="hover:text-indigo-600" href="about.html">About</a><a class="font-medium text-indigo-600" href="contact.html" aria-current="page">Contact</a><a class="hover:text-indigo-600" href="signin.html">Sign In</a><a class="rounded-xl bg-indigo-600 px-4 py-2 font-semibold text-white hover:bg-indigo-700" href="signup.html">Sign Up</a></div>
+        <button type="button" class="rounded-lg border border-slate-300 px-3 py-2 md:hidden" data-menu-toggle aria-controls="mobileMenu" aria-expanded="false" aria-label="Open menu"><span aria-hidden="true">☰</span></button>
       </nav>
-      <div id="mobileMenu" class="hidden border-t bg-white px-4 py-4 md:hidden">
-        <div class="flex flex-col gap-3">
-          <a href="../../index.html">Home</a><a href="about.html">About</a
-          ><a href="contact.html">Contact</a><a href="signin.html">Sign In</a
-          ><a href="signup.html">Sign Up</a>
-        </div>
-      </div>
+      <div id="mobileMenu" class="hidden border-t bg-white px-4 py-4 md:hidden"><div class="flex flex-col gap-3"><a class="hover:text-indigo-600" href="../../index.html">Home</a><a class="hover:text-indigo-600" href="about.html">About</a><a class="font-medium text-indigo-600" href="contact.html" aria-current="page">Contact</a><a class="hover:text-indigo-600" href="signin.html">Sign In</a><a class="rounded-xl bg-indigo-600 px-4 py-2 text-center font-semibold text-white hover:bg-indigo-700" href="signup.html">Sign Up</a></div></div>
     </header>
+
     <main>
-      <section class="hero-grid">
-        <div class="mx-auto max-w-7xl px-4 py-16">
-          <span
-            class="rounded-full bg-indigo-100 px-4 py-2 text-sm font-bold text-indigo-700"
-            >GET IN TOUCH</span
-          >
-          <h1 class="mt-5 text-5xl font-black">Let’s talk.</h1>
-          <p class="mt-4 max-w-2xl text-lg text-slate-600">
-            Have a question, suggestion or project idea? Send us a message and
-            we’ll get back to you.
-          </p>
-        </div>
-      </section>
+      <section class="hero-grid"><div class="mx-auto max-w-7xl px-4 py-16"><span class="rounded-full bg-indigo-100 px-4 py-2 text-sm font-bold text-indigo-700">GET IN TOUCH</span><h1 class="mt-5 text-5xl font-black">Let’s talk.</h1><p class="mt-4 max-w-2xl text-lg text-slate-600">Have a question, suggestion or project idea? Send us a message and we’ll get back to you.</p></div></section>
       <section class="mx-auto grid max-w-7xl gap-8 px-4 py-14 lg:grid-cols-5">
         <div class="space-y-4 lg:col-span-2">
-          <div class="rounded-2xl border bg-white p-6 shadow-sm">
-            <div class="text-2xl">📧</div>
-            <h2 class="mt-3 font-black">Email</h2>
-            <p class="mt-1 text-slate-600">hello@novaspace.example</p>
-          </div>
-          <div class="rounded-2xl border bg-white p-6 shadow-sm">
-            <div class="text-2xl">📍</div>
-            <h2 class="mt-3 font-black">Office</h2>
-            <p class="mt-1 text-slate-600">Innovation District, Lahore</p>
-          </div>
-          <div class="rounded-2xl border bg-white p-6 shadow-sm">
-            <div class="text-2xl">⏰</div>
-            <h2 class="mt-3 font-black">Hours</h2>
-            <p class="mt-1 text-slate-600">Mon–Fri · 9:00 AM–5:00 PM</p>
-          </div>
+          <div class="rounded-2xl border bg-white p-6 shadow-sm"><div class="text-2xl" aria-hidden="true">📧</div><h2 class="mt-3 font-black">Email</h2><p class="mt-1 text-slate-600">hello@novaspace.example</p></div>
+          <div class="rounded-2xl border bg-white p-6 shadow-sm"><div class="text-2xl" aria-hidden="true">📍</div><h2 class="mt-3 font-black">Office</h2><p class="mt-1 text-slate-600">Innovation District, Lahore</p></div>
+          <div class="rounded-2xl border bg-white p-6 shadow-sm"><div class="text-2xl" aria-hidden="true">⏰</div><h2 class="mt-3 font-black">Hours</h2><p class="mt-1 text-slate-600">Mon–Fri · 9:00 AM–5:00 PM</p></div>
+          <div class="rounded-2xl bg-indigo-600 p-6 text-white"><p class="text-sm font-bold uppercase tracking-wide text-indigo-200">Response time</p><p class="mt-2 text-2xl font-black">Within 1–2 days</p><p class="mt-2 text-sm text-indigo-100">We read every message and route it to the right person.</p></div>
         </div>
         <div class="rounded-3xl border bg-white p-7 shadow-sm lg:col-span-3">
-          <div class="mb-6 flex items-center justify-between">
-            <div>
-              <h2 class="text-2xl font-black">Send a message</h2>
-              <p class="mt-1 text-sm text-slate-500">
-                Required fields are marked with *
-              </p>
-            </div>
-            <span
-              class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-700"
-              >We reply within 1–2 days</span
-            >
-          </div>
-          <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            class="space-y-5"
-          >
-            <input type="hidden" name="form-name" value="contact" />
-            <p class="hidden">
-              <label>Don’t fill this out <input name="bot-field" /></label>
-            </p>
+          <div class="mb-6 flex items-start justify-between gap-4"><div><h2 class="text-2xl font-black">Send a message</h2><p class="mt-1 text-sm text-slate-500">Required fields are marked with *</p></div><span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-700">Open to ideas</span></div>
+          <form action="https://formspree.io/f/mjygvqlz" method="POST" accept-charset="UTF-8" class="space-y-5">
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
             <div class="grid gap-5 md:grid-cols-2">
-              <label class="block"
-                ><span class="text-sm font-semibold">Full name *</span
-                ><input
-                  required
-                  name="name"
-                  type="text"
-                  class="mt-2 w-full rounded-xl border px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
-                  placeholder="Your name" /></label
-              ><label class="block"
-                ><span class="text-sm font-semibold">Email *</span
-                ><input
-                  required
-                  name="email"
-                  type="email"
-                  class="mt-2 w-full rounded-xl border px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
-                  placeholder="you@example.com"
-              /></label>
+              <label class="block" for="name"><span class="text-sm font-semibold">Full name *</span><input id="name" required name="name" type="text" autocomplete="name" class="mt-2 w-full rounded-xl border px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100" placeholder="Your name" /></label>
+              <label class="block" for="email"><span class="text-sm font-semibold">Email *</span><input id="email" required name="email" type="email" autocomplete="email" class="mt-2 w-full rounded-xl border px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100" placeholder="you@example.com" /></label>
             </div>
-            <label class="block"
-              ><span class="text-sm font-semibold">Subject *</span
-              ><input
-                required
-                name="subject"
-                type="text"
-                class="mt-2 w-full rounded-xl border px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
-                placeholder="How can we help?" /></label
-            ><label class="block"
-              ><span class="text-sm font-semibold">Message *</span
-              ><textarea
-                required
-                name="message"
-                rows="6"
-                class="mt-2 w-full rounded-xl border px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
-                placeholder="Write your message..."
-              ></textarea>
-            </label>
-            <div
-              class="flex items-start gap-3 rounded-xl bg-slate-50 p-4 text-sm text-slate-600"
-            >
-              <input required type="checkbox" class="mt-1" id="consent" /><label
-                for="consent"
-                >I confirm that the information above is accurate and I agree to
-                be contacted about my message.</label
-              >
-            </div>
-            <button
-              class="w-full rounded-xl bg-indigo-600 px-5 py-3 font-bold text-white hover:bg-indigo-700"
-              type="submit"
-            >
-              Send message →
-            </button>
+            <label class="block" for="subject"><span class="text-sm font-semibold">Subject *</span><input id="subject" required name="subject" type="text" class="mt-2 w-full rounded-xl border px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100" placeholder="How can we help?" /></label>
+            <label class="block" for="message"><span class="text-sm font-semibold">Message *</span><textarea id="message" required name="message" rows="6" class="mt-2 w-full rounded-xl border px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100" placeholder="Write your message..."></textarea></label>
+            <label class="flex items-start gap-3 rounded-xl bg-slate-50 p-4 text-sm text-slate-600" for="consent"><input required type="checkbox" name="consent" id="consent" class="mt-1 h-4 w-4" /><span>I confirm that the information above is accurate and I agree to be contacted about my message.</span></label>
+            <button class="w-full rounded-xl bg-indigo-600 px-5 py-3 font-bold text-white hover:bg-indigo-700" type="submit">Send message →</button>
           </form>
         </div>
       </section>
     </main>
-    <footer class="border-t bg-white">
-      <div class="mx-auto flex max-w-7xl justify-between px-4 py-8">
-        <p class="text-sm text-slate-500">© 2026 NovaSpace · Assignment 01</p>
-        <a class="text-sm font-semibold text-indigo-600" href="../../index.html"
-          >Back to home</a
-        >
-      </div>
-    </footer>
-    <script>
-      document.getElementById("menuBtn").onclick = () =>
-        document.getElementById("mobileMenu").classList.toggle("hidden");
-    </script>
+
+    <footer class="border-t bg-white"><div class="mx-auto grid max-w-7xl gap-8 px-4 py-12 md:grid-cols-3"><div><div class="flex items-center gap-2 text-xl font-black"><span class="grid h-9 w-9 place-items-center rounded-xl bg-indigo-600 text-white" aria-hidden="true">N</span>NovaSpace</div><p class="mt-3 max-w-sm text-sm text-slate-500">A student-built multi-page responsive website using HTML5 and Tailwind CSS.</p></div><div><h2 class="font-bold">Explore</h2><div class="mt-3 flex flex-col gap-2 text-sm text-slate-600"><a class="hover:text-indigo-600" href="../../index.html">Home</a><a class="hover:text-indigo-600" href="about.html">About</a><a class="hover:text-indigo-600" href="contact.html">Contact</a></div></div><div><h2 class="font-bold">Account</h2><div class="mt-3 flex flex-col gap-2 text-sm text-slate-600"><a class="hover:text-indigo-600" href="signin.html">Sign In</a><a class="hover:text-indigo-600" href="signup.html">Sign Up</a><a class="hover:text-indigo-600" href="contact.html">Support</a></div></div></div><div class="border-t py-5 text-center text-xs text-slate-500">© 2026 NovaSpace. Assignment 01.</div></footer>
   </body>
 </html>

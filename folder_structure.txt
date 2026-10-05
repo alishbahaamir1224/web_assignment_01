@@ -4,8 +4,10 @@ web_assignment_01/
 ├── .gitignore
 ├── assets/
 │   ├── favicon.svg
-│   └── css/
-│       └── styles.css
+│   ├── css/
+│   │   └── styles.css
+│   └── js/
+│       └── site.js
 └── src/
     └── pages/
         ├── about.html

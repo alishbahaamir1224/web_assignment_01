@@ -16,7 +16,12 @@ Open `index.html` in a browser, or serve the folder with a local static server.
 
 ## Contact form
 
-The Contact page uses Netlify Forms markup (`data-netlify="true"`). Deploy the project to Netlify and enable form handling for real submissions.
+The Contact page submits to the configured Formspree endpoint using the Basic HTML integration. Its required name, email, subject, message, consent, and hidden spam fields are submitted with `POST`.
+
+The site uses relative paths so the same files work from the GitHub Pages project subpath:
+`https://alishbahaamir1224.github.io/web_assignment_01/`.
+
+Tailwind CSS is loaded on each page from the official browser CDN, while `assets/css/styles.css` contains the small NovaSpace-specific visual rules and `assets/js/site.js` controls the responsive mobile menu and demo account-form notices.
 
 ## Submission links
 
