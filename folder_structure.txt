@@ -1,0 +1,14 @@
+web_assignment_01/
+├── index.html
+├── README.md
+├── .gitignore
+├── assets/
+│   ├── favicon.svg
+│   └── css/
+│       └── styles.css
+└── src/
+    └── pages/
+        ├── about.html
+        ├── contact.html
+        ├── signin.html
+        └── signup.html

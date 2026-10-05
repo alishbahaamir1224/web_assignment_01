@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>NovaSpace — Sign Up</title>
+    <link rel="icon" href="../../assets/favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+  </head>
+  <body class="min-h-screen bg-slate-50 text-slate-900">
+    <header class="border-b bg-white">
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4"
+      >
+        <a
+          href="../../index.html"
+          class="flex items-center gap-2 font-black text-xl"
+          ><span
+            class="grid h-9 w-9 place-items-center rounded-xl bg-indigo-600 text-white"
+            >N</span
+          >NovaSpace</a
+        ><a href="signin.html" class="text-sm font-semibold text-indigo-600"
+          >Already have an account? Sign in</a
+        >
+      </nav>
+    </header>
+    <main
+      class="mx-auto grid max-w-6xl gap-10 px-4 py-14 lg:grid-cols-5 lg:items-center"
+    >
+      <section class="lg:col-span-2">
+        <span
+          class="rounded-full bg-indigo-100 px-3 py-1 text-xs font-bold text-indigo-700"
+          >JOIN NOVASPACE</span
+        >
+        <h1 class="mt-5 text-5xl font-black tracking-tight">
+          Create your <span class="gradient-text">workspace.</span>
+        </h1>
+        <p class="mt-5 text-lg leading-8 text-slate-600">
+          Set up your account and start building a clearer way to work.
+        </p>
+        <div class="mt-8 space-y-4">
+          <div class="flex gap-3">
+            <span
+              class="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-indigo-600 text-white"
+              >✓</span
+            >
+            <div>
+              <p class="font-bold">Simple setup</p>
+              <p class="text-sm text-slate-500">
+                Create an account in under a minute.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <span
+              class="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-indigo-600 text-white"
+              >✓</span
+            >
+            <div>
+              <p class="font-bold">Team-ready</p>
+              <p class="text-sm text-slate-500">
+                Invite collaborators whenever you’re ready.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <span
+              class="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-indigo-600 text-white"
+              >✓</span
+            >
+            <div>
+              <p class="font-bold">Responsive</p>
+              <p class="text-sm text-slate-500">
+                Work comfortably across screen sizes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="rounded-3xl border bg-white p-7 shadow-xl shadow-slate-200/70 lg:col-span-3"
+      >
+        <div class="mb-6">
+          <h2 class="text-2xl font-black">Create your account</h2>
+          <p class="mt-1 text-sm text-slate-500">All fields are required.</p>
+        </div>
+        <form
+          class="space-y-5"
+          onsubmit="
+            event.preventDefault();
+            document.getElementById('notice').classList.remove('hidden');
+          "
+        >
+          <div class="grid gap-5 md:grid-cols-2">
+            <label class="block"
+              ><span class="text-sm font-semibold">First name</span
+              ><input
+                required
+                type="text"
+                class="mt-2 w-full rounded-xl border px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+                placeholder="Alishba" /></label
+            ><label class="block"
+              ><span class="text-sm font-semibold">Last name</span
+              ><input
+                required
+                type="text"
+                class="mt-2 w-full rounded-xl border px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+                placeholder="Aamir"
+            /></label>
+          </div>
+          <label class="block"
+            ><span class="text-sm font-semibold">Email address</span
+            ><input
+              required
+              type="email"
+              class="mt-2 w-full rounded-xl border px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+              placeholder="you@example.com" /></label
+          ><label class="block"
+            ><span class="text-sm font-semibold">Password</span
+            ><input
+              required
+              minlength="8"
+              type="password"
+              class="mt-2 w-full rounded-xl border px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+              placeholder="At least 8 characters" /></label
+          ><label class="block"
+            ><span class="text-sm font-semibold">Account type</span
+            ><select
+              required
+              class="mt-2 w-full rounded-xl border bg-white px-4 py-3"
+            >
+              <option value="">Select one</option>
+              <option>Student</option>
+              <option>Creator</option>
+              <option>Team member</option>
+            </select></label
+          ><label class="flex items-start gap-3 text-sm text-slate-600"
+            ><input required type="checkbox" class="mt-1" /><span
+              >I agree to the terms of service and privacy policy.</span
+            ></label
+          ><button
+            class="w-full rounded-xl bg-indigo-600 px-5 py-3 font-bold text-white hover:bg-indigo-700"
+          >
+            Create account →
+          </button>
+          <div
+            id="notice"
+            class="hidden rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-700"
+          >
+            Demo registration submitted successfully. Connect your backend for
+            real account creation.
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="border-t bg-white py-6 text-center text-xs text-slate-500">
+      © 2026 NovaSpace · Assignment 01
+    </footer>
+  </body>
+</html>
